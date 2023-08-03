@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-family: system-ui;
+}
+
+
+
+header {
+    background-color: rgb(243, 213, 166);
+}
+
+.head2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate;
+}
+
+header nav {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1200px;
+    /* width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-between;
+}
+
+nav li {
+    flex-basis: 48%;
+    margin-bottom: 0.5rem;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav li:first-child a {
+    background-color: transparent;
+}
+
+
+nav a {
+    font-size: 1.2rem;
+    display: block;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: red;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    &:hover {
+        background-color: black;
+        color: rgb(242, 242, 175);
+    }
+}
+
+.img2 {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* header :end */
+
+.sec-1 {
+    background-color: rgb(217, 221, 224);
+    padding: 3rem;
+}
+
+.missiontext {
+    display: block;
+    line-height: 1.7;
+    margin: 0 auto;
+}
+
+.missionimg {
+    display: block;
+    max-height: 100px;
+}
+
+p {
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* section 1 :end */
+
+.sec-2 {
+    padding: 1rem;
+    background-color: #005F73;
+    /* align-items: center; */
+    /* padding-bottom: 100px; */
+}
+
+.sec-2 h1 {
+    color: white;
+}
+
+.sec2-child {
+    display: flex;
+    /* margin-left: 150px; */
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+figure img {
+    margin-bottom: -4px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -50px;
+}
+
+figcaption {
+    background-color: rgb(255, 255, 255, 0.8);
+    font-size: 1.87rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+figcaption a {
+    padding: 1rem;
+    display: block;
+}
+
+.fig1 {
+    border-color: #bb3e03;
+    flex-basis: 100%;
+}
+
+.fig2 {
+    border-color: #ca6701;
+    flex-basis: 100%;
+}
+
+.fig3 {
+    border-color: #8ac684;
+    flex-basis: 100%;   
+}
+
+
+/* @media screen and (max-width: 1100px) and (min-width: 768px) {
+    .sec2-child {
+        flex-wrap: wrap;
+    }
+
+    .fig2,
+    .fig1 {
+        flex-basis: calc(50% - 20px);
+        margin: 10px;
+    }
+
+    .fig3 {
+        flex-basis: 80%;
+    }
+} */
+
+
+
+
+/* section 2 :end */
+
+.sec-3 {
+    background-color: #dbe4de;
+    /* padding-bottom: 50px; */
+    padding: 1rem;
+}
+
+.sec3-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fig4 {
+    width: 100%;
+    max-height: 700px;
+    border-color: #ee9800;
+}
+
+.fig4 img {
+    object-position: 0 0;
+}
+
+.sec3-child2 {
+    margin-top: 50px;
+}
+
+.sec3-child2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.fig5 {
+    border-color: #ca6601;
+}
+
+.fig6 {
+    border-color: #004f69;
+}
+
+.fig7 {
+    border-color: #ee9600;
+}
+
+.fig8 {
+    border-color: #bb3e03;
+}
+
+.fig9 {
+    border-color: #8ed186;
+}
+
+.fig10 {
+    border-color: #3c9397;
+}
+
+/* sec 3 :end */
+
+footer {
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    /* height: 20vh; */
+    padding: 3rem;
+    background-color: #e9d8a6;
+}
+
+.foot-1 {
+    margin-bottom: 50px;
+}
+
+.foot-2 footer p {
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .head2 img {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 550px) {
+
+    header nav {
+        padding: 3rem;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 1.2em;
+    }
+
+    nav li {
+        flex-basis: auto;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        color: black;
+        background-color: transparent;
+        padding: 0;
+
+        &:hover {
+            background-color: transparent;
+            color: red;
+        }
+    }
+
+    /* Your CSS rules for screens with minimum width of 550px and above */
+    .missiontext {
+        display: flow-root;
+        max-width: 900px;
+    }
+
+    .missionimg {
+        float: left;
+        shape-outside: polygon(35.84% 94.87%, 34.64% 87.05%, 51.64% 4.06%, 55.1% 2.38%);
+        max-height: 211px;
+    }
+    .sec-2{
+        padding: 3rem;
+    }
+
+    .fig1{
+        flex-basis: 45%;
+    }
+    .fig2{
+        flex-basis: 45%;
+    }
+    .fig3{
+        flex-basis: 92%;
+    }
+
+
+    .fig4 {
+        width: 100%;
+        max-height: 700px;
+        border-color: #ee9800;
+    }
+
+    .fig4 img {
+        object-position: 0 0;
+    }
+
+    .fig5 {
+        flex-basis: 45%;
+    }
+
+    figure img {
+        object-position: 0 0;
+    }
+
+    .fig6 {
+        flex-basis: 45%;
+    }
+
+    .fig7 {
+        flex-basis: 45%;
+    }
+
+    .fig8 {
+        flex-basis: 45%;
+    }
+
+    .fig9 {
+        flex-basis: 45%;
+    }
+
+    .fig10 {
+        flex-basis: 45%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .foot-1 {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    nav li:nth-child(2),
+    nav li:nth-child(3) {
+        order: 1;
+    }
+
+    nav li:nth-child(4),
+    nav li:nth-child(5) {
+        order: 3;
+    }
+
+    section h1 {
+        margin-left: 100px;
+
+    }
+
+    .sec2-child{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fig1{
+        flex-basis: 29% ;
+    }
+    .fig2{
+        flex-basis: 29% ;
+    }
+    .fig3{
+        flex-basis: 29% ;
+    }
+
+    .sec-3 {
+        padding: 3rem;
+    }
+
+    .fig4 {
+        width: 78%;
+    }
+
+    .fig5 {
+        flex-basis: 29%;
+    }
+
+    .fig6 {
+        flex-basis: 29%;
+    }
+
+    .fig7 {
+        flex-basis: 29%;
+    }
+
+    .fig8 {
+        flex-basis: 29%;
+    }
+
+    .fig9 {
+        flex-basis: 29%;
+    }
+
+    .fig10 {
+        flex-basis: 29%;
+    }
+}
